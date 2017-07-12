@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="FRMS">
+		<provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
+		<class>com.infy.entity.GroupInfo</class>
+		<class>com.infy.entity.Location</class>
+		<class>com.infy.entity.Source</class>
+		<class>com.infy.entity.Solution</class>
+		<class>com.infy.entity.InitiatingGroup</class>
+		<class>com.infy.entity.MasterRequirement</class>
+		<class>com.infy.entity.ProductRequirement</class>
+		<class>com.infy.entity.Login</class>
+		<class>com.infy.entity.ModuleAnchor</class>
+		<class>com.infy.entity.MasterRequirmentAttachment</class>
+		<class>com.infy.entity.FRSData</class>
+		<class>com.infy.entity.SRSData</class>
+		<class>com.infy.entity.ImpactData</class>
+		<class>com.infy.entity.GroupDetailsAttachment</class>
+		<class>com.infy.entity.SubModule</class>
+		<class>com.infy.entity.ModuleSubModuleMapping</class>
+		<class>com.infy.entity.Vertical</class>
+		<class>com.infy.entity.VerticalModuleMapping</class>
+		<class>com.infy.entity.Module</class>
+		<class>com.infy.entity.Localization</class>
+		<class>com.infy.entity.ProductVersion</class>
+    <properties>
+          
+     <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1" />
+            <property name="javax.persistence.jdbc.user" value="sa" />
+            <property name="javax.persistence.jdbc.password" value="" />
+     
+    </properties>
+	</persistence-unit>
+</persistence>
